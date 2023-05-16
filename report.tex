@@ -1,0 +1,101 @@
+\documentclass[twoside]{hcmut-report}
+\parindent 0pt
+% Draft watermark
+% https://github.com/callegar/LaTeX-draftwatermark
+
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+
+% Encodings
+\usepackage{gensymb,textcomp}
+
+% Better tables
+% Wide tables go to https://tex.stackexchange.com/q/332902
+\usepackage{array,multicol,multirow,siunitx,tabularx}
+
+% Better enum
+\usepackage{enumitem}
+
+% Graphics
+\usepackage{caption,float}
+
+% Embed code
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+
+% References
+% Use \Cref{} instead of \ref{}
+\usepackage[nameinlink]{cleveref}
+
+% Sub-preambles
+% https://github.com/MartinScharrer/standalone
+
+% Configurations
+\reporttype{Assignment Report}
+\title{LINEAR ALGEBRA}
+\advisor{Dau The Phiet}
+\stuname{%
+  & Tran Dinh Dang Khoa    & 2211649 \\
+  & Chau Vinh Ky           & 2211785 \\
+  & Pham Tan Khoa          & 2252359 \\
+  & Pham Tan Phong         & 2252614 \\
+  & Nguyen Khac Viet       & 2252904 \\
+  & Nguyen Hoang Ngoc Tuan & 2252873 \\
+}
+
+% Allow page breaks inside align* environment
+%\allowdisplaybreaks{}
+
+% Set depth of numbering for counters (equations, figures, tables, etc.)
+% Use package chngcntr if you want more advanced control
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+% Set depth of numbering for sections and table of contents
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+
+% Custom commands
+%\newcommand*\mean[1]{\bar{#1}}
+
+\begin{document}
+\coverpage%
+
+\tableofcontents
+
+\input{chapters/problem1.tex}
+\input{chapters/problem2.tex}
+\input{chapters/problem3.tex}
+\input{chapters/conclusion.tex}
+
+% \bibliographystyle{plain}
+% \bibliography{refs/example.bib}
+% \nocite{*}
+
+\end{document}

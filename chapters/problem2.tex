@@ -1,0 +1,30 @@
+\clearpage
+\section{ Problem 2.}
+Construct an inner product in $\mathbb{R}^n$. 
+In that inner product, write a program to input any number of vectors in $\mathbb{R}^n$ and return the orthogonal
+basis and orthonormal basis of the subspace spanned by these vectors. (Use Gram - Schmidt process). From that, given any vector in $\mathbb{R}^n$, find the coordinates in that basis and find the length of the vector.
+
+\vspace*{1cm}
+
+\textbf{Theory:}\\[6pt]
+An orthogonal basis for a vector space is a set of vectors that are mutually orthogonal, meaning that every pair of vectors in the set is orthogonal (their dot product is zero). \\[6pt]
+An orthonormal basis for a vector space is a set of vectors that are both orthogonal and normalized. In other words, an orthonormal basis is an orthogonal basis where all vectors have unit length. \\[6pt]
+The Gram-Schmidt process is a method for orthonormalizing a set of vectors in an inner product space.\\[6pt]
+
+In order to solve this problem, we need to first prompt the user to enter the dimension of the vector space and the vectors. Then, we need to implement the Gram-Schmidt process to find the orthogonal basis and orthonormal basis of the subspace spanned by the input vectors.\\[6pt]
+
+The simplest and most common inner product for any subspace is the Dot Product. Therefore, we will use the Dot Product as the inner product for this problem.
+
+\vspace*{1cm}
+
+\textbf{Python code:}
+\lstinputlisting[language=Python]{code/problem2.py}
+
+\clearpage
+
+\textbf{Result:}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=16cm]{graphics/2.png}
+    \caption{Console output of problem2.py}
+\end{figure}
