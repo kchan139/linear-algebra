@@ -1,7 +1,5 @@
 \documentclass[twoside]{hcmut-report}
 \parindent 0pt
-% Draft watermark
-% https://github.com/callegar/LaTeX-draftwatermark
 
 \renewcommand{\thesection}{\Roman{section}}
 \renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
@@ -52,9 +50,6 @@
 % Use \Cref{} instead of \ref{}
 \usepackage[nameinlink]{cleveref}
 
-% Sub-preambles
-% https://github.com/MartinScharrer/standalone
-
 % Configurations
 \reporttype{Assignment Report}
 \title{LINEAR ALGEBRA}
@@ -68,21 +63,9 @@
   & Nguyen Hoang Ngoc Tuan & 2252873 \\
 }
 
-% Allow page breaks inside align* environment
-%\allowdisplaybreaks{}
-
-% Set depth of numbering for counters (equations, figures, tables, etc.)
-% Use package chngcntr if you want more advanced control
 \numberwithin{equation}{section}
 \numberwithin{figure}{section}
 \numberwithin{table}{section}
-
-% Set depth of numbering for sections and table of contents
-%\setcounter{secnumdepth}{3}
-%\setcounter{tocdepth}{3}
-
-% Custom commands
-%\newcommand*\mean[1]{\bar{#1}}
 
 \begin{document}
 \coverpage%
